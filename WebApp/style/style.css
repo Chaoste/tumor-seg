@@ -1,0 +1,142 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.land {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+}
+
+.description {
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+}
+
+.content {
+  margin-top: 10rem;
+  width: 100%;
+  height: 100%;
+}
+
+.addContainer {
+  width: 20%;
+  margin: 0 auto;
+  height: 70rem;
+  border: 3px dotted grey;
+  border-radius: 10px;
+}
+
+.icon {
+  display: block;
+  height: 100%;
+}
+
+.addContainer a:hover {
+  text-decoration: none;
+}
+
+.icon i{
+  font-size: 20rem;
+  color: grey;
+  text-align: center;
+  margin-top: 20rem;
+  display: block;
+}
+
+.addContainer p {
+  font-size: 30px;
+  text-align: center;
+  color: grey;
+}
+
+/*Analyzing page*/
+.analyze {
+  height: 100%;
+  width: 100%;
+}
+
+.analyze .content {
+  display: -webkit-inline-box;
+}
+
+.leftContent {
+  width: 50%;
+  margin-right: 30rem;
+}
+
+.rightContent {
+  width: 50%;
+}
+
+.picture {
+  height: 70rem;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid grey;
+
+}
+
+.add {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 10rem;
+  width: 30rem;
+  height: 50%;
+}
+
+.iconSmall {
+  display: block;
+  height: 100%;
+}
+
+.iconSmall i{
+  font-size: 20rem;
+  color: grey;
+  text-align: center;
+  margin-top: 20rem;
+  display: block;
+}
+
+.add p {
+  font-size: 30px;
+  text-align: center;
+  color: grey;
+}
+
+.info {
+  border: 1px solid grey;
+  height: 50%;
+  width: 30rem;
+
+  border-radius: 10px;
+}
+
+.info p {
+  font-size: 20px;
+}
+
+.descriptionContainer {
+    width: 100%;
+    margin-top: 10rem;
+    height: 10rem;
+    text-align: center;
+}
+
+.descriptionContainer p {
+  font-size: 20px;
+}
