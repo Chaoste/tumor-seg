@@ -11,7 +11,8 @@ export default class AnalyzingPage extends Component {
         <div className='content'>
           <div className='leftContent'>
             <div className='picture'>
-          </div>
+              <BrainView />
+            </div>
             </div>
             <div className='rightContent'>
               <div className='info'>
