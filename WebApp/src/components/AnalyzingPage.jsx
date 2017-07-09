@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BrainView from './BrainView';
 
 export default class AnalyzingPage extends Component {
   render() {
@@ -29,7 +30,6 @@ export default class AnalyzingPage extends Component {
           <div className='descriptionContainer'>
             <p>This is a sample test for describing a part of a tumor ajlfbar ajwruzrbvaej rvaelrzgvbalrevc avsigvb</p>
           </div>
-
       </div>
     );
   }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   height: 100%;
   width: 100%;
@@ -139,4 +140,24 @@ body {
 
 .descriptionContainer p {
   font-size: 20px;
+=======
+canvas {
+  height: 100%;
+  width: 100%;
+  border: 1px gray solid;
+  border-radius: 5px;
+}
+
+.brain-container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.region {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+>>>>>>> 9522b8342dd351a77520a44a2aecf6f6d55a0761
 }
