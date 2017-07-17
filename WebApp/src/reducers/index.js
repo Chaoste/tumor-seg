@@ -11,8 +11,13 @@ const tumor = (state = {tumorType:'', survivalRate:''}, action) => {
     case 'RECEIVED_RESULTS':
       return {
         ...state,
-        tumorType: 'High-grade glioma',
-        survivalRate: '?',
+        tumorType: action.payload.data.tumor_type,
+        survivalRate: action.payload.data.survival_rate,
+      }
+    case 'STARTED_UPLOAD':
+      return {
+        tumorType: '',
+        survivalRate: '',
       }
     default:
       return {
@@ -26,8 +31,10 @@ const images = (state = {}, action) => {
     case 'RECEIVED_RESULTS':
       return {
         ...state,
-        results: action.payload.results,
+        results: action.payload.data.tumor,
       }
+    case 'STARTED_UPLOAD':
+      return {}
     default:
       return {
         ...state,

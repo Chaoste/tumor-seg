@@ -4,6 +4,8 @@ import ImageTracer from 'imagetracerjs'
 import { selectRegion } from '../actions'
 import { connect } from 'react-redux'
 
+const IMG_SIZE = "256px"
+
 class BrainView extends Component {
 
   componentDidMount() {
@@ -53,12 +55,16 @@ class BrainView extends Component {
   render() {
     let imagePreview = null, region1 = null, region2 = null, region3 = null
     if (this.props.loading) {
-      imagePreview = (<div className="previewText">Looking for the tumor...</div>)
+      imagePreview = (
+        <div className="previewText">
+          <img src="res/loading.gif" />
+          <div>Looking for the tumor...</div>
+        </div>)
     } else if (this.props.results && this.props.results.length > 0) {
-      imagePreview = (<img weidth="128px" height="128px" src={`data:image/png;base64,${this.props.results[0].url}`} />)
-      region1 = (<img weidth="128px" height="128px" src={`data:image/png;base64,${this.props.results[1].url}`} />)
-      region2 = (<img weidth="128px" height="128px" src={`data:image/png;base64,${this.props.results[2].url}`} />)
-      region3 = (<img weidth="128px" height="128px" src={`data:image/png;base64,${this.props.results[3].url}`} />)
+      imagePreview = (<img weidth={IMG_SIZE} height={IMG_SIZE} src={`data:image/png;base64,${this.props.results[0].url}`} />)
+      region1 = (<img weidth={IMG_SIZE} height={IMG_SIZE} src={`data:image/png;base64,${this.props.results[1].url}`} />)
+      region2 = (<img weidth={IMG_SIZE} height={IMG_SIZE} src={`data:image/png;base64,${this.props.results[2].url}`} />)
+      region3 = (<img weidth={IMG_SIZE} height={IMG_SIZE} src={`data:image/png;base64,${this.props.results[3].url}`} />)
     } else {
       imagePreview = (<div className="previewText">Please upload an Image</div>)
     }

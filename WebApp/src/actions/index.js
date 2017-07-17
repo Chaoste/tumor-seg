@@ -10,11 +10,11 @@ export const finishedUpload = () => {
   }
 }
 
-export const receivedResults = (results) => {
+export const receivedResults = (data) => {
   return {
     type: 'RECEIVED_RESULTS',
     payload: {
-      results,
+      data,
     }
   }
 }

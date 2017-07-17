@@ -57,7 +57,7 @@ class AnalyzingPage extends Component {
     }).then(response => response.json())
     .then((data) => {
       this.props.finishedUpload()
-      this.props.receivedResults(data.results)
+      this.props.receivedResults(data)
     }).catch((err) => {
       this.props.finishedUpload()
       console.error('ERROR!', err)
