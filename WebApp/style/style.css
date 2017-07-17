@@ -8,6 +8,12 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
+    background: #E5E5E5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-45deg, #AAA, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-45deg, #AAA, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-45deg, #AAA, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-45deg, #AAA, white); /* Standard syntax */
+    min-height: 100vh;
 }
 
 .land {
@@ -83,13 +89,12 @@ body {
 }
 
 .picture {
+  height: 256px;
 }
 
 .add {
-  border: 1px solid grey;
-  border-radius: 10px;
   margin-top: 5rem;
-  width: 30rem;
+  margin-bottom: 5rem;
 }
 
 .iconSmall {
@@ -98,10 +103,9 @@ body {
 }
 
 .iconSmall i {
-  font-size: 20rem;
+  font-size: 5rem;
   color: grey;
   text-align: center;
-  margin-top: 1rem;
   display: block;
 }
 
@@ -109,6 +113,23 @@ body {
   font-size: 30px;
   text-align: center;
   color: grey;
+  margin-bottom: 0;
+}
+
+.add #file-input {
+  display: none;
+}
+
+.add a {
+  padding: 1rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.add a:hover {
+  text-decoration: none !important;
+  background-color: rgba(0, 0, 1, 0.1);
+  cursor: pointer;
 }
 
 .info {
@@ -133,6 +154,8 @@ body {
 .brain-container {
   margin: 0 auto;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .region {
@@ -141,4 +164,10 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  text-align: center;
+}
+
+.region img, .previewText {
+  margin-top: 50%;
+  transform: translateY(-50%);
 }
