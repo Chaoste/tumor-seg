@@ -1915,8 +1915,8 @@ loader-utils@^0.2.11, loader-utils@^0.2.16:
     object-assign "^4.0.1"
 
 lodash-es@^4.2.1:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.14.tgz#12a95a963cc5955683cee3b74e85458954f37ecc"
 
 lodash@^3.10.1:
   version "3.10.1"
@@ -2233,10 +2233,6 @@ osenv@^0.1.4:
 pako@~0.2.0:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/pako/-/pako-0.2.9.tgz#f3f7522f4ef782348da8161bad9ecfd51bf83a75"
-
-paper@^0.11.4:
-  version "0.11.4"
-  resolved "https://registry.yarnpkg.com/paper/-/paper-0.11.4.tgz#4ed9588f57f45afa85020f398b29a98c5f856f5d"
 
 parse-glob@^3.0.4:
   version "3.0.4"
